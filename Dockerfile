@@ -15,6 +15,7 @@ WORKDIR /var/www/html/
 RUN unzip agriculture_website_template_6891381.zip -d /var/www/html/
 #COPY agriculture_website_template_6891381/* .
 RUN cp -rvf /var/www/html/template/* .
+RUN cp home.html index.html
 #RUN rm -rf agriculture_website_template_6891381.zip
 EXPOSE 80
 
